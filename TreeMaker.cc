@@ -59,11 +59,11 @@
 // as I hope to merge the functionality into BTagWeigtTools.h
 //#include "TopTreeAnalysisBase/Tools/interface/BTagSFUtil.h"
 #include "TopTreeAnalysisBase/Tools/interface/BTagWeightTools.h"
-#include "TopTreeAnalysisBase/Tools/interface/Trigger.h"
-
 
 #include "TopTreeAnalysisBase/Tools/interface/JetCombiner.h"
 #include "TopTreeAnalysisBase/Tools/interface/JetTools.h"
+
+#include "Trigger_displaced.h"
 
 using namespace std;
 using namespace TopTree;
