@@ -445,31 +445,31 @@ int main (int argc, char *argv[])
   double muonSFID, muonSFIso;
 
   // Muon ID SF
-  MuonSFWeight *muonSFWeightID_T_ = new MuonSFWeight(pathToCaliDir+"LeptonSF/"+"MuonID_Z_RunCD_Reco76X_Feb15.root", "MC_NUM_TightIDandIPCut_DEN_genTracks_PAR_pt_spliteta_bin1/abseta_pt_ratio",true, false, false);
+  MuonSFWeight *muonSFWeightID_T_ = new MuonSFWeight(pathToCaliDir+"LeptonSF/MuonSF/"+"MuonID_Z_RunBCD_prompt80X_7p65.root", "MC_NUM_TightIDandIPCut_DEN_genTracks_PAR_pt_spliteta_bin1/abseta_pt_ratio",true, false, false);
   
   // Muon Iso SF depending on the WP of the muon ID SF
-  MuonSFWeight *muonSFWeightIso_TT_ = new MuonSFWeight(pathToCaliDir+"LeptonSF/"+"MuonIso_Z_RunCD_Reco76X_Feb15.root", "MC_NUM_TightRelIso_DEN_TightID_PAR_pt_spliteta_bin1/abseta_pt_ratio",true, false, false);  // Tight RelIso, Tight ID
+  MuonSFWeight *muonSFWeightIso_TT_ = new MuonSFWeight(pathToCaliDir+"LeptonSF/MuonSF/"+"MuonIso_Z_RunBCD_prompt80X_7p65.root", "MC_NUM_TightRelIso_DEN_TightID_PAR_pt_spliteta_bin1/abseta_pt_ratio",true, false, false);  // Tight RelIso, Tight ID
 
   // eo  Muon SF
 
   // Electron SF
 
   // Electron reco SF
-  ElectronSFWeight *electronSFWeightReco_ = new ElectronSFWeight (pathToCaliDir+"LeptonSF/"+"eleRECO.txt.egamma_SF2D.root","EGamma_SF2D",true, false, false);   // (... , ... , extendRange , debug, print warning)
+  ElectronSFWeight *electronSFWeightReco_ = new ElectronSFWeight ("eleRECO.txt.egamma_SF2D.root","EGamma_SF2D",true, false, false);   // (... , ... , extendRange , debug, print warning)
   
 
   // Electron ID SF
   string electronIdSFFile= "CutBasedID_TightWP_76X_18Feb.txt_SF2D.root";
-  ElectronSFWeight *electronSFWeightId_T_ = new ElectronSFWeight (pathToCaliDir+"LeptonSF/"+electronIdSFFile,"EGamma_SF2D",true, false, false);
+  ElectronSFWeight *electronSFWeightId_T_ = new ElectronSFWeight (electronIdSFFile,"EGamma_SF2D",true, false, false);
 
 
   // eo  Electron SF
   
 
   // PU SF
-  LumiReWeighting LumiWeights_down_(pathToCaliDir+"PileUpReweighting/pileup_MC_RunIIFall15DR76-Asympt25ns.root",pathToCaliDir+"PileUpReweighting/pileup_2015Data76X_25ns-Run246908-260627Cert_Silver_down.root","pileup","pileup");
-  LumiReWeighting LumiWeights_(pathToCaliDir+"PileUpReweighting/pileup_MC_RunIIFall15DR76-Asympt25ns.root",pathToCaliDir+"PileUpReweighting/pileup_2015Data76X_25ns-Run246908-260627Cert_Silver.root","pileup","pileup");
-  LumiReWeighting LumiWeights_up_(pathToCaliDir+"PileUpReweighting/pileup_MC_RunIIFall15DR76-Asympt25ns.root",pathToCaliDir+"PileUpReweighting/pileup_2015Data76X_25ns-Run246908-260627Cert_Silver_up.root","pileup","pileup");
+  //LumiReWeighting LumiWeights_down_(pathToCaliDir+"PileUpReweighting/pileup_MC_RunIIFall15DR76-Asympt25ns.root",pathToCaliDir+"PileUpReweighting/pileup_2015Data76X_25ns-Run246908-260627Cert_Silver_down.root","pileup","pileup");
+  //LumiReWeighting LumiWeights_(pathToCaliDir+"PileUpReweighting/pileup_MC_RunIIFall15DR76-Asympt25ns.root",pathToCaliDir+"PileUpReweighting/pileup_2015Data76X_25ns-Run246908-260627Cert_Silver.root","pileup","pileup");
+  //LumiReWeighting LumiWeights_up_(pathToCaliDir+"PileUpReweighting/pileup_MC_RunIIFall15DR76-Asympt25ns.root",pathToCaliDir+"PileUpReweighting/pileup_2015Data76X_25ns-Run246908-260627Cert_Silver_up.root","pileup","pileup");
 
   /////////////////////////////////
   //  Loop over Datasets
@@ -1627,9 +1627,12 @@ int main (int argc, char *argv[])
 
 	  
 
-	  double lumiWeight_down = LumiWeights_down_.ITweight( npu ); // simplest reweighting, just use reconstructed number of PV.
-	  double lumiWeight = LumiWeights_.ITweight( npu ); 
-	  double lumiWeight_up = LumiWeights_up_.ITweight( npu ); 
+	  double lumiWeight_down = 1.; // simplest reweighting, just use reconstructed number of PV.
+	  double lumiWeight = 1.;
+	  double lumiWeight_up = 1.; 
+	  //double lumiWeight_down = LumiWeights_down_.ITweight( npu ); // simplest reweighting, just use reconstructed number of PV.
+	  //double lumiWeight = LumiWeights_.ITweight( npu ); 
+	  //double lumiWeight_up = LumiWeights_up_.ITweight( npu ); 
 
 	  evt_puSF_down = lumiWeight_down;
 	  evt_puSF = evt_puSF_pc = lumiWeight;
