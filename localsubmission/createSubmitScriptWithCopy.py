@@ -53,6 +53,7 @@ for chan in channels:
     # getting the appropriate xml file
     if chan == "MuMu":
         tree = ET.ElementTree(file='../config/FullSamplesMuMuV0.xml')
+        btagWPs = ["None"]
     elif chan == "ElEl":
         tree = ET.ElementTree(file='../config/ElElV4.xml')
     elif chan == "ElMu":
