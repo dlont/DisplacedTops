@@ -46,24 +46,28 @@ void Trigger::bookTriggers(bool isData)
   
   /// Add relevant triggers to triggerlist
   //  Recommended triggers for TOP analyses
-  //  Last updated: 19 Jan 2016. https://twiki.cern.ch/twiki/bin/viewauth/CMS/TopTrigger
+  //  Last updated: 16 Nov 2016. https://twiki.cern.ch/twiki/bin/viewauth/CMS/TopTrigger
   if (singleLep)
   {
     if (muon)   // Triggers for data & MC are the same
     {
-      triggerList.push_back("HLT_Mu28NoFiltersNoVtx_CentralCaloJet40_v*");
-      //      triggerList.push_back("HLT_IsoMu20_v*");
-      //      triggerList.push_back("HLT_IsoTkMu20_v*");
+      if(isData)triggerList.push_back("HLT_Iso(Tk)Mu24_v*");	//2016
+      else triggerList.push_back("HLT_Iso(Tk)Mu24_v2");		//2016
+      //triggerList.push_back("HLT_Mu28NoFiltersNoVtx_CentralCaloJet40_v*");	//2015
+      //      triggerList.push_back("HLT_IsoMu20_v*");			//2015
+      //      triggerList.push_back("HLT_IsoTkMu20_v*");		//2015
     }
     if (electron)
     {
       if (isData)
       {
-	triggerList.push_back("HLT_Ele27_WPLoose_Gsf_v*");
+	triggerList.push_back("HLT_Ele32_eta2p1_WPTight_Gsf_v*");	//2016
+	//triggerList.push_back("HLT_Ele27_WPLoose_Gsf_v*");	//2015
       }
       else
       {
-	triggerList.push_back("HLT_Ele27_WPLoose_Gsf_v*");
+	triggerList.push_back("HLT_Ele32_eta2p1_WPTight_Gsf_v3");	//2016
+	//triggerList.push_back("HLT_Ele27_WPLoose_Gsf_v*");	//2015
       }   	
     }
   }
@@ -72,16 +76,30 @@ void Trigger::bookTriggers(bool isData)
   {
     if (muon && ! electron) // double muons
     {
-      triggerList.push_back("HLT_DoubleMu23NoFiltersNoVtxDisplaced_v*"); //dxz > 0.01
-      triggerList.push_back("HLT_DoubleMu33NoFiltersNoVtx_v*");
+      if (isData) triggerList.push_back("HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v*");     //2016
+      else triggerList.push_back("HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v3");    //2016
+      //triggerList.push_back("HLT_DoubleMu23NoFiltersNoVtxDisplaced_v*"); //dxz > 0.01 (2015)
+      //triggerList.push_back("HLT_DoubleMu33NoFiltersNoVtx_v*");	   //2015
     }
     if (! muon && electron) // double electrons
     {
-      triggerList.push_back("HLT_Photon36_R9Id85_OR_CaloId24b40e_Iso50T80L_Photon22_AND_HE10_R9Id65_Eta2_Mass15_v*");
+      if (isData) triggerList.push_back("HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v*"); //2016
+      else triggerList.push_back("HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v4"); //2015
+      //triggerList.push_back("HLT_Photon36_R9Id85_OR_CaloId24b40e_Iso50T80L_Photon22_AND_HE10_R9Id65_Eta2_Mass15_v*"); //2015
     }
     if (muon && electron) // muon and electron
     {
-      triggerList.push_back("HLT_Mu38NoFiltersNoVtx_Photon38_CaloIdL_v*");
+      if (isData) {
+	triggerList.push_back("HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_v*"); 	//2016
+	triggerList.push_back("HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_v*"); 	//2016
+	triggerList.push_back("HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v*"); 	//2016
+	triggerList.push_back("HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ_v*"); 	//2016
+      }
+      else {
+	triggerList.push_back("HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_v4"); 	//2016
+	triggerList.push_back("HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_v4"); 	//2016
+      }
+      //triggerList.push_back("HLT_Mu38NoFiltersNoVtx_Photon38_CaloIdL_v*");	//2015
     }
   }
   
