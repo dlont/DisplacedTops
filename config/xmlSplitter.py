@@ -47,11 +47,11 @@ for chan in channels:
                                    continue
                               
      # removes the <data> from the file to have the treeproc file
-     with open(outFileYield,"r") as input:
-          with open(outFileTreeProc,"wb") as output:
-               for line in input:
-                    if "data>" not in line:
-                         output.write(line)
+#     with open(outFileYield,"r") as input:
+#          with open(outFileTreeProc,"wb") as output:
+#               for line in input:
+#                    if "data>" not in line:
+#                         output.write(line)
 
 
 

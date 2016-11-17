@@ -23,7 +23,7 @@
 <!-- Data RunC -->
 <!-- Lumi = 17.225  pb-1 -->
 <!--
-<d name="DataRunC"     title="Data"    add="0"   color="1"  ls="1"  lw="2" normf="1" xsection="1."  EqLumi="17.225" PreselEff="0.0" filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1-SILVER/DoubleEG/crab_DoubleEG-Run2015C_25ns-16Dec2015-v1crab6/160727_032530/0000/*.root"/>
+<d name="DataRunC"     title="Data"    add="0"   color="1"  ls="1"  lw="2" normf="1" xsection="1."  EqLumi="17.225" PreselEff="0.0" filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1-\-GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1-SILVER/DoubleEG/crab_DoubleEG-Run2015C_25ns-16Dec2015-v1crab6/160727_032530/0000/*.root"/>
 -->
 
 <!-- Data RunD -->
@@ -45,7 +45,7 @@
 <!-- Data RunC -->
 <!-- Lumi = 17.225  pb-1 -->
 <!--
-<d name="DataRunC"     title="Data"    add="0"   color="1"  ls="1"  lw="2" normf="1" xsection="1."  EqLumi="17.225" PreselEff="0.0" filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1-SILVER/DoubleMuon/crab_DoubleMuon-Run2015C_25ns-16Dec2015-v1crab2/160727_032656/0000/*.root"/>
+<d name="DataRunC"     title="Data"    add="0"   color="1"  ls="1"  lw="2" normf="1" xsection="1."  EqLumi="17.225" PreselEff="0.0" filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1-\-GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1-SILVER/DoubleMuon/crab_DoubleMuon-Run2015C_25ns-16Dec2015-v1crab2/160727_032656/0000/*.root"/>
 -->
 
 <!-- Data RunD -->
@@ -243,7 +243,7 @@
 <d name="TTJets_amc" title="TTJets" add="0" color="872"  ls="1"  lw="2" normf="1" EqLumi="" xsection="831.76" PreselEff="0.0"   filenames=""/>
 
 <!-- leptonic -->
-<d name="TTJets_Dilept" title="TTJets_Lept" add="1" color="872"  ls="1"  lw="2" normf="1" EqLumi="" xsection="88.288" PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/TTJets_DiLept_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/crab_TeVmadgraphMLMpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0ext1v1crab23/*/*/*.root"/>
+<d name="TTJets_Dilept" title="TTJets_Lept" add="1" color="872"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="88.288" PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/TTJets_DiLept_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/crab_TeVmadgraphMLMpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0ext1v1crab23/*/*/*.root"/>
 
 <d name="TTJets_SingleLeptFromT" title="TTJets_Lept" add="0" color="872"  ls="1"  lw="2" normf="1" EqLumi="" xsection="182.7" PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/TTJets_SingleLeptFromT_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/crab_phMLMpythia8Fall15PU25nsData2015v176XmcRun2asymptoticv12ext1v276XmcRun2asymptoticFall15DR76v1crab49/160727_040552/0000/*.root"/> <!--N/a-->
 
@@ -256,31 +256,31 @@
 
 <!-- bo QCD inclusive -->
 <!-- ****************** -->
-<d name="QCD_EmEnriched_1000to1400" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_1000to1400_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab89/*/*/*.root"/>
+<d name="QCD_Inclusive_1000to1400" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_1000to1400_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab89/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_120to170" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_120to170_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab81/*/*/*.root"/>
+<d name="QCD_Inclusive_120to170" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_120to170_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab81/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_1400to1800" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_1400to1800_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab90/*/*/*.root"/>
+<d name="QCD_Inclusive_1400to1800" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_1400to1800_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab90/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_170to300" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_170to300_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab82/*/*/*.root"/>
+<d name="QCD_Inclusive_170to300" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_170to300_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab82/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_1800to2400" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_1800to2400_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab91/*/*/*.root"/>
+<d name="QCD_Inclusive_1800to2400" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_1800to2400_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab91/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_2400to3200" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_2400to3200_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab92/*/*/*.root"/>
+<d name="QCD_Inclusive_2400to3200" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_2400to3200_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab92/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_300to470" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_300to470_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab83/*/*/*.root"/>
+<d name="QCD_Inclusive_300to470" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_300to470_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab83/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_30to50" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_30to50_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v2crab78/*/*/*.root"/>
+<d name="QCD_Inclusive_30to50" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_30to50_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v2crab78/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_3200toInf" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_3200toInf_TuneCUETP8M1_13TeV_pythia8/crab_fTuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab93/*/*/*.root"/>
+<d name="QCD_Inclusive_3200toInf" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_3200toInf_TuneCUETP8M1_13TeV_pythia8/crab_fTuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab93/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_470to600" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_470to600_TuneCUETP8M1_13TeV_pythia8/*/*/*/*.root"/>
+<d name="QCD_Inclusive_470to600" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_470to600_TuneCUETP8M1_13TeV_pythia8/*/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_600to800" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_600to800_TuneCUETP8M1_13TeV_pythia8/*/*/*/*.root"/>
+<d name="QCD_Inclusive_600to800" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_600to800_TuneCUETP8M1_13TeV_pythia8/*/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_800to1000" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_800to1000_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab88/*/*/*.root"/>
+<d name="QCD_Inclusive_800to1000" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_800to1000_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab88/*/*/*.root"/>
 
-<d name="QCD_EmEnriched_80to120" title="QCDEMEnriched" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="" xsection="-1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_80to120_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab80/*/*/*.root"/>
+<d name="QCD_Inclusive_80to120" title="QCDInclusive" add="1" color="623"  ls="1"  lw="2" normf="1" EqLumi="1." xsection="1." PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/QCD_Pt_80to120_TuneCUETP8M1_13TeV_pythia8/crab_0TuneCUETP8M113TeVpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab80/*/*/*.root"/>
 <!-- ****************** -->
 <!-- eo QCD inclusive -->
 
@@ -375,10 +375,10 @@
 
 
 <!-- Z->ll -->
-<d name="DYJetsToLL_M-50toInf_Madgraph" title="DrellYann" add="1" color="410"  ls="1"  lw="2" normf="1" EqLumi="1494.44466574" xsection="6025.2" PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/crab_phMLMpythia8Fall15PU25nsData2015v176XmcRun2asymptoticv12ext1v176XmcRun2asymptoticFall15DR76v1crab129/160727_034509/000*/*.root"/>
+<d name="DYJetsToLL_M-50toInf_Madgraph" title="DrellYann" add="1" color="410"  ls="1"  lw="2" normf="1" EqLumi="1494.44466574" xsection="6025.2" PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/crab_VmadgraphMLMpythia8RunIISpring16MiniAODv2PUSpring16RAWAODSIMreHLT80XmcRun2asymptoticv14ext1v1crab113/*/*/*.root"/>
 
 
-<d name="DYJetsToll_M-10to50" title="DrellYann M10-50" add="1" color="430"  ls="1"  lw="2" normf="1" EqLumi="1" xsection="18610" PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/crab_oFXFXpythia8Fall15PU25nsData2015v176XmcRun2asymptoticv12ext1v176XmcRun2asymptoticFall15DR76v1crab112/160727_034317/0000/*.root"/>
+<d name="DYJetsToll_M-10to50" title="DrellYann M10-50" add="1" color="430"  ls="1"  lw="2" normf="1" EqLumi="1" xsection="18610" PreselEff="0.0"   filenames="/pnfs/iihe/cms/store/user/fblekman/TopTree/CMSSW_80X_v1/TTP-CMSSW_80X_v1--GT-80X_mcRun2_asymptotic_2016_miniAODv2_v1/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/crab_113TeVamcatnloFXFXpythia8RunIISpring16MiniAODv2PUSpring1680XmcRun2asymptotic2016miniAODv2v0v1crab8/*/*/*.root"/>
 
 
 <d name="DYJetsToLL_M-50toInf_amc" title="DrellYann" add="0" color="410"  ls="1"  lw="2" normf="1" EqLumi="" xsection="6025.2" PreselEff="0.0"   filenames="*.root"/>

@@ -32,7 +32,7 @@ date = dd+"_"+mm+"_"+yyyy
 #channels = ["MuMu","ElEl"] 
 #channels = ["ElMu"] 
 
-channels = ["MuMu"] 
+channels = ["MuMu","ElEl"] 
 #channels = ["ElEl"] 
 #channels=["test"]
 
@@ -52,10 +52,13 @@ for chan in channels:
     print "\nSearching list of sample used for ", chan, " channel!"
     # getting the appropriate xml file
     if chan == "MuMu":
-        tree = ET.ElementTree(file='../config/FullSamplesMuMuV0.xml')
+        #tree = ET.ElementTree(file='../config/TreeProc_MuMu.xml')
+        tree = ET.ElementTree(file='../config/MuMu.xml')
         btagWPs = ["None"]
     elif chan == "ElEl":
-        tree = ET.ElementTree(file='../config/ElElV4.xml')
+        #tree = ET.ElementTree(file='../config/TreeProc_ElEl.xml')
+        tree = ET.ElementTree(file='../config/ElEl.xml')
+        btagWPs = ["None"]
     elif chan == "ElMu":
 #        tree = ET.ElementTree(file='../config/ElMuV0.xml')
 #        tree = ET.ElementTree(file='../config/DisplacedTopsSignal.xml')
