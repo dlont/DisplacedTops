@@ -7,19 +7,17 @@ We want to make one xml per channel (bbEl, bbMu, ElEl, MuMu) and one common xml 
 """
 
 
-Version = "V4"
-inputFile = "Filled_FullSamples"+Version+".xml"
+Version = ""
+#inputFile = "Filled_FullSamples"+Version+".xml"
 #inputFile = "FullSamples"+Version+".xml"
+inputFile = "FullSamples_80X.xml"
 
 
-
-channels= ["ElEl","MuMu","bbEl","bbMu","ttLeptons"]
+#channels= ["ElEl","MuMu","bbEl","bbMu","ttLeptons"] #Quentin's
+channels= ["ElEl","MuMu"]
 dataSetTitleList=[
-     ["DoubleEG","500_CTau-10_","WJets","Diboson","SingleTop","QCDEMEnriched","QCDbcToE","TTJets_Lept","DrellYann"],
-     ["DoubleMuon","500_CTau-10_","WJets","Diboson","SingleTop","QCDMuEnriched","TTJets_Lept","DrellYann"],
-     ["SingleElectron","500_CTau-10_","WJets","Diboson","SingleTop","QCDEMEnriched","QCDbcToE","TTJets_Lept","DrellYann"],
-     ["SingleMuon","500_CTau-10_","WJets","Diboson","SingleTop","QCDMuEnriched","TTJets_Lept","DrellYann"],
-     ["MET","TTJets_Lept","DrellYann"],
+     ["DoubleEG","WJets","Diboson","SingleTop","QCDInclusive","TTJets_Lept","DrellYann"],
+     ["DoubleMuon","WJets","Diboson","SingleTop","QCDInclusive","TTJets_Lept","DrellYann"],
      ]
 
 
