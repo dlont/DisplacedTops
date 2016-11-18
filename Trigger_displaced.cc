@@ -169,6 +169,12 @@ void Trigger::checkAvail(int currentRunTrig, vector < Dataset* > datasets, unsig
       iter->second.second = event->trigHLT(iter->second.first);
     else
       iter->second.second = false;
+    #ifdef NOTRIGMC
+     #warning "WARNING: Code for MC without triggers switched on!!!"
+     if (iter->second.first >= 0 && iter->second.first == 9999) // For MC samples without triggers
+         iter->second.second = true;                            // Force trigger to be fired 
+    #endif
+     
   }   
 }
 
